@@ -144,6 +144,7 @@
 }
 .cart-image{
   max-width: 160px;
+    flex-shrink: 0;
 }
 .cart-images{
   width: 100%;
