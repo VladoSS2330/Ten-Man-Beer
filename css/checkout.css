@@ -1,0 +1,189 @@
+.checkout__content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 100px 0;
+    position: relative;
+}
+
+
+.checkout__form{
+    display: flex;
+   flex-direction: column;
+}
+.checkout__form label{
+    font-family: "Gilroy", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    color: #c5c5c5;
+}
+
+.checkout-input, .custom-select{
+    margin-bottom: 20px;
+    background: inherit;
+    border: 1px solid #c4c4c4;
+    padding: 25px;
+    width: 100%;
+    max-width: 553px;
+}
+.checkout-input,.custom-select{
+    margin-top: 10px;
+}
+.checkout__title{
+    margin-top: 80px;
+}
+.checkout-wrapper{
+    max-height: 400px;
+    overflow-y: auto;
+}
+.custom-select {
+    width: 100%;
+    background-color: #000; 
+    border: 1px solid #555; 
+    color: #fff; 
+    font-size: 16px; 
+}
+.custom-select:focus {
+    border-color: #888;
+}
+.checkout__submit {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 28px 30px;
+}
+.checkbox-desc{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.custom-radio,.custom-checkbox{
+    width: 20px;
+    height: 20px;
+}
+.checkout__box {
+    display: flex;
+    flex-direction: column;
+}
+.radio-option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.radio-option label, .checkbox-option label {
+    margin-left: 10px;
+}
+.checkbox-link{
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+.checkbox-link:hover {
+    color: #0056b3; 
+}
+.checkout__form-btn{
+    width: auto;
+    margin-top: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 28px 30px;
+    transition: all .3s ease;
+}
+.checkout__form-btn:hover{
+  border: 1px solid #6345b5;
+}
+
+
+/* cart */
+.checkout-cart-body{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+.checkout-cart {
+    width: 100%;
+    max-width: 500px;
+}
+.checkout-cart-content {
+    flex-grow: 1;
+}
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #c4c4c4;;
+}
+.checkout-cart-image {
+    max-width: 100px;
+    flex-shrink: 0;
+}
+.checkout-cart-images {
+    width: 100%;
+    height: auto;
+}
+.checkout-cart-subtitle{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.checkout-cart-info{
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.price{
+    font-size: 28px;
+}
+.number-product{
+    font-size: 20px;
+}
+/* Стилі для скролу */
+.checkout-wrapper::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  .checkout-wrapper::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+  }
+  
+  .checkout-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .checkout-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+
+@media(max-width:835px){
+    .checkout__content{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .checkout-cart {
+        width: 100%;
+        max-width: 700px; 
+    }
+
+
+    .checkout__form {
+        align-items: center;
+    }
+}
+@media(max-width:470px){
+    .cart-total{
+        font-size: 24px;
+    }
+}

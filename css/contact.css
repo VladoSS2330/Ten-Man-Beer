@@ -1,0 +1,100 @@
+.contacts__content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 140px;
+}
+.contacts__info{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.contact__form{
+    width: 50%;
+}
+.contact__input{
+    margin-bottom: 20px;
+    background: inherit;
+    border: 1px solid #c4c4c4;
+    padding: 25px;
+    width: 100%;     
+    max-width: 553px;           
+    
+}
+.contact__input::placeholder{
+    font-family: "Gilroy", sans-serif;
+    font-style: italic;
+    font-weight: 265;
+    font-size: 20px;
+}
+.contact__input-message{
+    height: 140px;
+}
+.contact__title{
+    font-family: "Gilroy", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contact__desc{
+    font-family: "Gilroy", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all .3s ease;
+}
+.contact__desc:hover{
+    text-decoration: underline;
+}
+.contact__item {
+    margin-top: 20px;
+}
+
+.contact__subdesc{
+    font-style: italic;
+    color: #5c5c5c;
+    margin-top: 20px;
+}
+.contact__container-btn {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+    max-width: 553px;
+}
+.contact__btn{
+    font-family: "Bebas Neue Cyrillic", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 72px;
+    border: 1px solid #c4c4c4;
+    transition: all .3s ease;
+    background: inherit;
+}
+.contact__btn:hover{
+   border: 1px solid #6345b5;
+}
+@media(max-width:700px){
+    .contacts__content{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+    .contact__form{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact__title{
+        font-size: 20px;
+    }
+    .contact__btn{
+        font-size: 20px;
+        padding: 14px 40px;
+    }
+    .contacts__info{
+        gap: 40px;
+    }
+}

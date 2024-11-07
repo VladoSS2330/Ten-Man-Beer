@@ -1,0 +1,57 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+.delivery__text{
+    padding: 60px 0 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+.delivery{
+    flex-basis: 600px;
+    font-family: "Gilroy", sans-serif;
+}
+.delivery-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+.delivery__desc{
+    padding-bottom: 30px;
+    list-style: inside;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+}
+.notice{
+    border: 1px solid #c4c4c4;
+    padding: 15px 32px;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+}
+.prevention{
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+@media(max-width:800px){
+    .delivery__text{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .delivery{
+        flex-basis: 460px;
+    }
+    .title{
+        text-align: left;
+    }
+}

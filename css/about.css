@@ -1,0 +1,49 @@
+.about{
+    margin-bottom: 100px;
+}
+.about__content{
+    position: relative;
+}
+.about__cards{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    padding:20px 0 40px;
+}
+
+.about__card img{
+    width: 100%;
+}
+.about__text{
+    font-family: "Gilroy", sans-serif ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.about__prev{
+    font-family: "Gilroy", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+@media(max-width:800px){
+    .about__card{
+        width: 150px;
+    }
+    .about__prev, .about__text{
+        font-size: 18px;
+    }
+}
+@media(max-width:600px){
+    .about__prev, .about__text{
+        font-size: 16px;
+    }
+}

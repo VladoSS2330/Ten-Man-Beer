@@ -1,0 +1,76 @@
+.basket__content{
+  margin-bottom: 70px;
+}
+.basket__content .title{
+  margin-bottom: 70px;
+}
+.basket__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px; 
+  font-size: 32px;
+}
+.basket__message{
+  padding: 20px 0px 100px;
+}
+.basket-link{
+  font-size: 32px;
+  border: 1px solid #c5c5c5;
+  padding: 20px 25px;
+  margin-bottom: auto;
+  transition: all .3s ease;
+}
+.basket-link:hover{
+  border: 1px solid #6345b5;
+}
+.beer-desc{
+  font-weight: 400;
+  font-size: 20px;
+  color: #c1e1ff;
+  padding-top: 15px;
+}
+.basket-text{
+  max-width: 400px;
+}
+.basket-title{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.basket__btn-container{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  display: none;
+}
+@media(max-width:600px){
+ 
+    .h5{
+      display: none;
+    }
+    #cart-total{
+      justify-content: start;
+    }
+    .basket__btn-container {
+      justify-content: center;
+    } 
+    .cart-desc {
+      display: none;
+    }
+    .cart-close-btn {
+      display: none;
+    }
+    .basket-title {
+      font-size: 14px;
+      
+  }
+}
+@media(max-width:475px){
+  .basket-title {
+    font-size: 12px;
+  }
+  .basket__text {
+    font-size: 28px;
+}
+}

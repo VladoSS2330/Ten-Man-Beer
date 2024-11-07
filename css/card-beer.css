@@ -1,0 +1,133 @@
+.card-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    
+}
+.card__images{
+    flex: 1;
+    max-width: 794px;
+}
+.card__images img{
+    width: 100%;
+}
+.card__text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 47px;
+    max-width: 597px;
+    flex-basis: 100%;
+    
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.card__beer-text{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+.beer-char{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #c1e1ff;
+    padding-bottom: 40px;
+}
+.sore{
+    padding-bottom: 10px;
+}
+.beer-char .beer-info{
+    gap: 20px;
+}
+.beer__sore{
+    font-family: "Gilroy", sans-serif;
+    padding-bottom: 14px;
+}
+.beer__descr{
+    font-family: "Gilroy", sans-serif;
+    line-height: 150%;
+    padding-bottom: 40px;
+}
+.beer__descr p:first-of-type {
+    padding-bottom: 14px; 
+}
+.card__beer-price{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.beer__add__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+.quantity-container{
+    padding: 18px 22px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.quantity-btn { 
+    padding: 10px;
+    cursor: pointer;
+}
+
+.beer__add-btn{
+    border: 1px solid #fff;
+    padding: 28px 100px;
+    transition: all .3s ease;
+}
+.beer__add-btn:hover{
+    border-color: #5c5c5c;
+    color: #5c5c5c;
+}
+
+
+
+
+
+
+
+@media(max-width:800px){
+    .card-item{
+        flex-direction: column;
+    }
+    .volume{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:600px){
+    .beer__add-btn{
+        padding: 25px;
+    }
+    .quantity-container{
+        padding: 15px 22px;
+    }
+}
+@media(max-width:420px){
+    .beer__add-btn{
+        padding: 17px;
+        font-size: 18px;
+    }
+    .quantity-container {
+        padding: 5px;
+    }
+    
+}
+
